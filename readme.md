@@ -1,7 +1,7 @@
 # <p align="center">BMI CALCULATOR</p>
 
 <p align="center">
-    <img src="https://i.ibb.co.com/bLqV7yj/bmi.png" max-width="640px" max-height="360px"/>
+    <img src="https://i.ibb.co.com/zSmnthF/Screenshot-2024-08-21-221508.png" max-width="640px" max-height="360px"/>
   </a>
 </p>
 
