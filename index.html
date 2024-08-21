@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR BMI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/image/favicon.ico">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form id="bmi-form">
+                <h1>KALKULATOR BMI</h1>
+                <div class="form-radio">
+                    <label for="gender" class="form-group">Jenis Kelamin</label>
+                    <div>
+                        <label>
+                            <input type="radio" id="male" name="gender" value="Pria" required>
+                            <span>Laki-laki</span>
+                        </label>
+                        <label>
+                            <input type="radio" id="female" name="gender" value="Wanita" required>
+                            <span>Perempuan</span>
+                        </label>
+                    </div>
+                    <span id="gender-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="age">Usia (tahun)</label>
+                    <input type="number" id="age" name="age" required>
+                    <span id="age-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Berat Badan (kg)</label>
+                    <input type="number" id="weight" name="weight" required>
+                    <span id="weight-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="height">Tinggi Badan (cm)</label>
+                    <input type="number" id="height" name="height" required>
+                    <span id="height-error" class="error-message"></span>
+                </div>
+                <button type="button" id="calculate-btn" class="calculate-btn">Hitung BMI</button>
+                <button type="reset" id="reset-btn" class="reset-btn">Reset</button>
+                <button type="button" id="info-btn" class="info-btn">Info</button>
+            </form>
+            <div id="info-form">
+                <h2>TENTANG BMI</h2>
+                <p>Body Mass Index (BMI) atau yang sering dikenal dengan Indeks Massa Tubuh (IMT) adalah nilai ukur untuk mengetahui status gizi seseorang berdasarkan berat dan tinggi badannya. Nilai BMI juga dapat menjadi alat skrining awal untuk mengetahui risiko seseorang terhadap suatu penyakit. Nilai BMI yang tinggi menandakan bahwa Anda kelebihan berat badan (overweight atau obesitas). Sementara nilai BMI yang rendah artinya Anda kekurangan gizi dan memiliki berat badan rendah. Namun, BMI tidak bisa membedakan persen lemak tubuh dan persen massa otot.</p>
+                <p>Kalkulator ini bukanlah sebuah alat diagnosis medis ataupun pengganti konsultasi dokter spesialis/nutrisionis. Alat ini hanya untuk skrining yang bisa Anda lakukan mandiri, sebelum memeriksakan diri ke dokter. Setelah melihat hasil ini atau membaca artikel lain di Hello Sehat, sebaiknya tetap konsultasi ke dokter agar tahu lebih pasti kondisi kesehatan Anda saat ini. Hasil kalkulator BMI ini tidak bisa digunakan jika anda memiliki gangguan pola makan.</p>
+                <button type="button" id="back-btn" class="back-btn">Kembali</button>
+                <button type="button" id="consultation-btn" class="consultation-btn">Konsultasi</button>
+            </div>
+        </div>
+    </div>
+    <div class="author">
+        <p>Made with <span>❤</span> by <a href="https://github.com/albimst" target="_blank">Albi</a></p>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

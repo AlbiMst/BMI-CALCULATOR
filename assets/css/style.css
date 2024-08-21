@@ -1,0 +1,264 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEF1FF;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #7572F4;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px auto;
+    margin-bottom: -3px;
+    box-sizing: border-box;
+}
+
+.calculator h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-radio div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    justify-content: left;
+    margin-bottom: 15px;
+    font-size: 11px;
+}
+
+.form-radio input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.form-radio input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em #7572F4;
+    background-color: #dee7ff;
+    z-index: 1;
+    color: #7572F4;
+  }
+  
+  label span {
+    display: block;
+    cursor: pointer;
+    background-color: #ffffff;
+    padding: 0.375em .75em;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: .05em;
+    color: #3e4963;
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+  
+  label:first-child span {
+    border-radius: .375em 0 0 .375em;
+  }
+  
+  label:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+
+.form-group {
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #150a0a;
+}
+
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid #8a7e7e;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.form-group input:focus {
+    border-color: #7572F4;
+    outline: none;
+}
+
+.form-group div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group div label {
+    margin-right: 10px;
+    color: #555;
+}
+
+#info-form {
+    display: none;
+    text-align: justify;
+}
+
+.calculate-btn {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    background-color: #00BDAA;
+    border: 1px solid #00BDAA;
+    padding: 12px 20px;
+    border-radius: 7px;
+    transition: .3s;
+    color: #fff;
+}
+
+.calculate-btn:hover {
+    border: 1px solid #00BDAA;
+    background-color: transparent;
+    color: #00BDAA;
+}
+
+.reset-btn {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    background-color: #FF3E6D;
+    border: 1px solid #FF3E6D;
+    padding: 12px 20px;
+    border-radius: 7px;
+    transition: .3s;
+    color: #fff;
+}
+
+.reset-btn:hover {
+    border: 1px solid #FF3E6D;
+    background-color: transparent;
+    color: #FF3E6D;
+}
+
+.info-btn {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #7572F4;
+    border: 1px solid #7572F4;
+    padding: 12px 20px;
+    border-radius: 7px;
+    transition: .3s;
+    color: #fff;
+}
+
+.info-btn:hover {
+    border: 1px solid #7572F4;
+    background-color: transparent;
+    color: #7572F4;
+}
+
+.back-btn {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #7572F4;
+    border: 1px solid #7572F4;
+    padding: 12px 20px;
+    border-radius: 7px;
+    transition: .3s;
+    color: #fff;
+}
+
+.back-btn:hover {
+    border: 1px solid #7572F4;
+    background-color: transparent;
+    color: #7572F4;
+}
+
+.consultation-btn {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    background-color: #00BDAA;
+    border: 1px solid #00BDAA;
+    padding: 12px 20px;
+    border-radius: 7px;
+    transition: .3s;
+    color: #fff;
+}
+
+.consultation-btn:hover {
+    border: 1px solid #00BDAA;
+    background-color: transparent;
+    color: #00BDAA;
+}
+
+.author {
+    text-align: center;
+    font-size: 10px;
+    span {
+        color: #7572F4;
+    }
+}
+
+.author a {
+    color: #7572F4;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        margin: 20px auto;
+        max-width: 90%;
+        box-sizing: border-box;
+    }
+
+    .form-group input {
+        width: calc(100% - 16px);
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .calculate-btn, .reset-btn, .info-btn, .back-btn, .consultation-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .form-radio label span {
+        margin-bottom: 10px;
+    }
+
+    h1, h2 {
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .author p {
+        text-align: center;
+        font-size: 12px;
+        margin-top: -10px;
+    }
+}
+
